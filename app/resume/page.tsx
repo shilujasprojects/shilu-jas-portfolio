@@ -170,8 +170,8 @@ export default function ResumePage() {
         </div>
 
         {/* 1. PROFILE SECTION */}
-        <div className="mt-5 space-y-1.5">
-          <h2 className={`text-xs font-black tracking-wider uppercase pb-0.5 border-b ${isAts ? "text-slate-900 border-slate-400" : "text-[#C9A86A] border-[#C9A86A]/40"}`}>
+        <div className="mt-5 space-y-1.5 resume-item-block">
+          <h2 className={`text-xs font-black tracking-wider uppercase pb-0.5 border-b resume-section-heading ${isAts ? "text-slate-900 border-slate-400" : "text-[#C9A86A] border-[#C9A86A]/40"}`}>
             PROFILE
           </h2>
           <p className={`text-xs leading-relaxed text-justify ${isAts ? "text-slate-800" : "text-gray-300"}`}>
@@ -180,8 +180,8 @@ export default function ResumePage() {
         </div>
 
         {/* 2. TECHNICAL SKILLS SECTION */}
-        <div className="mt-5 space-y-2">
-          <h2 className={`text-xs font-black tracking-wider uppercase pb-0.5 border-b ${isAts ? "text-slate-900 border-slate-400" : "text-[#C9A86A] border-[#C9A86A]/40"}`}>
+        <div className="mt-5 space-y-2 resume-item-block">
+          <h2 className={`text-xs font-black tracking-wider uppercase pb-0.5 border-b resume-section-heading ${isAts ? "text-slate-900 border-slate-400" : "text-[#C9A86A] border-[#C9A86A]/40"}`}>
             TECHNICAL SKILLS
           </h2>
           <div className={`text-xs space-y-1 ${isAts ? "text-slate-800" : "text-gray-200"}`}>
@@ -210,12 +210,12 @@ export default function ResumePage() {
 
         {/* 3. INTERNSHIP EXPERIENCE SECTION */}
         <div className="mt-5 space-y-3.5">
-          <h2 className={`text-xs font-black tracking-wider uppercase pb-0.5 border-b ${isAts ? "text-slate-900 border-slate-400" : "text-[#C9A86A] border-[#C9A86A]/40"}`}>
+          <h2 className={`text-xs font-black tracking-wider uppercase pb-0.5 border-b resume-section-heading ${isAts ? "text-slate-900 border-slate-400" : "text-[#C9A86A] border-[#C9A86A]/40"}`}>
             INTERNSHIP EXPERIENCE
           </h2>
           
           {data.experience.map((exp) => (
-            <div key={exp.id} className="space-y-1">
+            <div key={exp.id} className="space-y-1 resume-item-block">
               <div className="flex justify-between items-start text-xs">
                 <div>
                   <span className={`font-bold text-sm ${isAts ? "text-slate-950" : "text-white"}`}>{exp.role}</span>
@@ -239,12 +239,12 @@ export default function ResumePage() {
 
         {/* 4. PROJECTS SECTION */}
         <div className="mt-5 space-y-3.5">
-          <h2 className={`text-xs font-black tracking-wider uppercase pb-0.5 border-b ${isAts ? "text-slate-900 border-slate-400" : "text-[#C9A86A] border-[#C9A86A]/40"}`}>
+          <h2 className={`text-xs font-black tracking-wider uppercase pb-0.5 border-b resume-section-heading ${isAts ? "text-slate-900 border-slate-400" : "text-[#C9A86A] border-[#C9A86A]/40"}`}>
             PROJECTS
           </h2>
 
           {data.projects.map((proj) => (
-            <div key={proj.slug} className="space-y-1">
+            <div key={proj.slug} className="space-y-1 resume-item-block">
               <div className="flex justify-between items-start text-xs">
                 <span className={`font-bold text-sm ${isAts ? "text-slate-950" : "text-white"}`}>
                   {proj.title} – {proj.subtitle}
@@ -273,8 +273,8 @@ export default function ResumePage() {
         </div>
 
         {/* 5. EDUCATION SECTION */}
-        <div className="mt-5 space-y-2.5">
-          <h2 className={`text-xs font-black tracking-wider uppercase pb-0.5 border-b ${isAts ? "text-slate-900 border-slate-400" : "text-[#C9A86A] border-[#C9A86A]/40"}`}>
+        <div className="mt-5 space-y-2.5 resume-item-block">
+          <h2 className={`text-xs font-black tracking-wider uppercase pb-0.5 border-b resume-section-heading ${isAts ? "text-slate-900 border-slate-400" : "text-[#C9A86A] border-[#C9A86A]/40"}`}>
             EDUCATION
           </h2>
           
@@ -294,8 +294,8 @@ export default function ResumePage() {
         </div>
 
         {/* 6. CERTIFICATIONS SECTION */}
-        <div className="mt-5 space-y-1.5">
-          <h2 className={`text-xs font-black tracking-wider uppercase pb-0.5 border-b ${isAts ? "text-slate-900 border-slate-400" : "text-[#C9A86A] border-[#C9A86A]/40"}`}>
+        <div className="mt-5 space-y-1.5 resume-item-block">
+          <h2 className={`text-xs font-black tracking-wider uppercase pb-0.5 border-b resume-section-heading ${isAts ? "text-slate-900 border-slate-400" : "text-[#C9A86A] border-[#C9A86A]/40"}`}>
             CERTIFICATIONS
           </h2>
           <ul className={`list-disc list-outside pl-4 text-xs space-y-1 ${isAts ? "text-slate-800" : "text-gray-300"}`}>
@@ -309,7 +309,7 @@ export default function ResumePage() {
                       href={certLink}
                       target="_blank"
                       rel="noreferrer"
-                      className={`ml-2 inline-flex items-center gap-0.5 underline text-[11px] font-medium ${isAts ? "text-blue-700 hover:text-blue-900" : "text-[#C9A86A] hover:text-[#E2C78E]"}`}
+                      className={`ml-2 inline-flex items-center gap-0.5 underline text-[11px] font-medium no-print ${isAts ? "text-blue-700 hover:text-blue-900" : "text-[#C9A86A] hover:text-[#E2C78E]"}`}
                     >
                       View Certificate PDF <ExternalLink className="w-2.5 h-2.5" />
                     </a>
@@ -321,8 +321,8 @@ export default function ResumePage() {
         </div>
 
         {/* 7. LANGUAGES SECTION */}
-        <div className="mt-5 space-y-1">
-          <h2 className={`text-xs font-black tracking-wider uppercase pb-0.5 border-b ${isAts ? "text-slate-900 border-slate-400" : "text-[#C9A86A] border-[#C9A86A]/40"}`}>
+        <div className="mt-5 space-y-1 resume-item-block">
+          <h2 className={`text-xs font-black tracking-wider uppercase pb-0.5 border-b resume-section-heading ${isAts ? "text-slate-900 border-slate-400" : "text-[#C9A86A] border-[#C9A86A]/40"}`}>
             LANGUAGES
           </h2>
           <div className={`text-xs ${isAts ? "text-slate-800" : "text-gray-200"}`}>

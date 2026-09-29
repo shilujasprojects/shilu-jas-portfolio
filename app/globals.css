@@ -421,13 +421,13 @@ html.light ::-webkit-scrollbar-thumb:hover {
 /* Print specific styles for resume PDF export */
 @media print {
   @page {
-    margin: 0 !important;
     size: A4 portrait;
+    margin: 15mm 14mm 15mm 14mm;
   }
 
   html, body {
     background: #ffffff !important;
-    color: #111827 !important;
+    color: #0f172a !important;
     margin: 0 !important;
     padding: 0 !important;
     -webkit-print-color-adjust: exact !important;
@@ -447,8 +447,8 @@ html.light ::-webkit-scrollbar-thumb:hover {
     color: #0f172a !important;
     border: none !important;
     box-shadow: none !important;
-    padding: 12mm 15mm !important;
-    margin: 0 auto !important;
+    padding: 0 !important;
+    margin: 0 !important;
     width: 100% !important;
     max-width: 100% !important;
   }
@@ -472,5 +472,17 @@ html.light ::-webkit-scrollbar-thumb:hover {
     color: #0f172a !important;
     text-decoration: none !important;
   }
+
+  /* Prevent page breaks from awkwardly splitting headings & project items */
+  .resume-section-heading {
+    break-after: avoid;
+    page-break-after: avoid;
+  }
+
+  .resume-item-block {
+    break-inside: avoid;
+    page-break-inside: avoid;
+  }
 }
+
 
