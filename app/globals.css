@@ -422,7 +422,7 @@ html.light ::-webkit-scrollbar-thumb:hover {
 @media print {
   @page {
     size: A4 portrait;
-    margin: 0 !important;
+    margin: 18mm 16mm 18mm 16mm !important;
   }
 
   html, body {
@@ -447,7 +447,7 @@ html.light ::-webkit-scrollbar-thumb:hover {
     color: #0f172a !important;
     border: none !important;
     box-shadow: none !important;
-    padding: 14mm 16mm !important;
+    padding: 0 !important;
     margin: 0 auto !important;
     width: 100% !important;
     max-width: 100% !important;
@@ -485,6 +485,7 @@ html.light ::-webkit-scrollbar-thumb:hover {
     margin-bottom: 3.5mm !important;
   }
 }
+
 
 
 
