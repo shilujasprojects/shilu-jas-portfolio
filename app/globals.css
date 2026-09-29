@@ -1,0 +1,471 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --bg-primary: #08090b;
+  --bg-secondary: #0d1117;
+  --bg-card: #12161f;
+  --bg-card-hover: #181e2b;
+  --text-primary: #f5f5f5;
+  --text-secondary: #9ca3af;
+  --text-muted: #6b7280;
+  --accent-gold: #c9a86a;
+  --accent-gold-light: #e2c78e;
+  --accent-gold-dark: #a38244;
+  --accent-muted: rgba(201, 168, 106, 0.15);
+  --border-subtle: rgba(255, 255, 255, 0.08);
+  --border-gold: rgba(201, 168, 106, 0.35);
+  --grid-color: rgba(255, 255, 255, 0.05);
+}
+
+/* ==========================================================================
+   Clean, Premium, High-Contrast Light Luxury Theme
+   ========================================================================== */
+html.light {
+  --bg-primary: #f8fafc;
+  --bg-secondary: #f1f5f9;
+  --bg-card: #ffffff;
+  --bg-card-hover: #f8fafc;
+  --text-primary: #0f172a;
+  --text-secondary: #334155;
+  --text-muted: #64748b;
+  --accent-gold: #926514; /* Deep rich metallic bronze-gold for crisp WCAG AAA contrast */
+  --accent-gold-light: #b38024;
+  --accent-gold-dark: #734e0a;
+  --accent-muted: rgba(146, 101, 20, 0.12);
+  --border-subtle: rgba(15, 23, 42, 0.12);
+  --border-gold: rgba(146, 101, 20, 0.35);
+  --grid-color: rgba(15, 23, 42, 0.05);
+}
+
+html.light body {
+  background-color: #f8fafc;
+  color: #0f172a;
+}
+
+/* Background mappings */
+html.light .bg-background {
+  background-color: #f8fafc !important;
+}
+
+html.light .bg-\[\#08090B\] {
+  background-color: #f8fafc !important;
+}
+
+html.light .bg-\[\#08090B\]\/85 {
+  background-color: rgba(248, 250, 252, 0.92) !important;
+}
+
+html.light .bg-\[\#0D1117\] {
+  background-color: #ffffff !important;
+}
+
+html.light .bg-\[\#0D1117\]\/95,
+html.light .bg-\[\#0D1117\]\/90 {
+  background-color: rgba(255, 255, 255, 0.96) !important;
+}
+
+html.light .bg-\[\#0D1117\]\/60,
+html.light .bg-\[\#0D1117\]\/50,
+html.light .bg-\[\#0D1117\]\/40 {
+  background-color: #f1f5f9 !important;
+}
+
+html.light .bg-\[\#12161F\] {
+  background-color: #f8fafc !important;
+}
+
+html.light .bg-\[\#12161F\]\/80,
+html.light .bg-\[\#12161F\]\/60 {
+  background-color: #f1f5f9 !important;
+}
+
+html.light .bg-\[\#161C26\],
+html.light .bg-\[\#161D29\] {
+  background-color: #e2e8f0 !important;
+}
+
+html.light .bg-white\/5 {
+  background-color: rgba(15, 23, 42, 0.04) !important;
+}
+
+html.light .bg-white\/10 {
+  background-color: rgba(15, 23, 42, 0.08) !important;
+}
+
+html.light .bg-white\/15 {
+  background-color: rgba(15, 23, 42, 0.12) !important;
+}
+
+html.light .bg-white\/20 {
+  background-color: rgba(15, 23, 42, 0.16) !important;
+}
+
+html.light .bg-black\/40 {
+  background-color: rgba(15, 23, 42, 0.05) !important;
+}
+
+html.light .bg-black\/80,
+html.light .bg-black\/90 {
+  background-color: rgba(15, 23, 42, 0.65) !important;
+}
+
+/* High-Contrast Crisp Typography Mappings */
+html.light .text-white {
+  color: #0f172a !important;
+}
+
+html.light .text-gray-100,
+html.light .text-gray-200 {
+  color: #1e293b !important;
+}
+
+html.light .text-gray-300 {
+  color: #334155 !important;
+}
+
+html.light .text-gray-400 {
+  color: #475569 !important;
+}
+
+html.light .text-gray-500 {
+  color: #64748b !important;
+}
+
+html.light .text-gray-600 {
+  color: #94a3b8 !important;
+}
+
+/* Rich Gold Accents for Light Mode */
+html.light .text-\[\#C9A86A\],
+html.light .text-\[\#E2C78E\],
+html.light .text-\[\#C9A86A\]\/90,
+html.light .text-\[\#C9A86A\]\/50 {
+  color: #926514 !important;
+}
+
+html.light .hover\:text-\[\#C9A86A\]:hover,
+html.light .group:hover .group-hover\:text-\[\#C9A86A\] {
+  color: #78510d !important;
+}
+
+html.light .bg-\[\#C9A86A\]\/10,
+html.light .bg-\[\#C9A86A\]\/15,
+html.light .bg-\[\#C9A86A\]\/20 {
+  background-color: rgba(146, 101, 20, 0.12) !important;
+}
+
+html.light .hover\:bg-\[\#C9A86A\]\/20:hover {
+  background-color: rgba(146, 101, 20, 0.2) !important;
+}
+
+html.light .bg-\[\#C9A86A\] {
+  background-color: #c9a86a !important;
+  color: #0f172a !important;
+}
+
+html.light .bg-\[\#C9A86A\]:hover,
+html.light .hover\:bg-\[\#E2C78E\]:hover {
+  background-color: #bfa060 !important;
+}
+
+/* Vivid, readable colored accents in light mode */
+html.light .text-emerald-400 {
+  color: #047857 !important;
+}
+
+html.light .bg-emerald-500\/10,
+html.light .bg-emerald-400\/10 {
+  background-color: rgba(16, 185, 129, 0.12) !important;
+}
+
+html.light .border-emerald-500\/20,
+html.light .border-emerald-500\/30 {
+  border-color: rgba(5, 150, 105, 0.3) !important;
+}
+
+html.light .text-cyan-400 {
+  color: #0e7490 !important;
+}
+
+html.light .text-amber-400,
+html.light .text-amber-300 {
+  color: #92400e !important;
+}
+
+html.light .text-purple-400 {
+  color: #6d28d9 !important;
+}
+
+html.light .text-rose-400,
+html.light .text-rose-300 {
+  color: #be123c !important;
+}
+
+html.light .bg-rose-500\/10 {
+  background-color: rgba(244, 63, 94, 0.12) !important;
+}
+
+html.light .border-rose-500\/20 {
+  border-color: rgba(225, 29, 72, 0.3) !important;
+}
+
+html.light .text-sky-400 {
+  color: #0369a1 !important;
+}
+
+/* Subtle, polished borders in light mode */
+html.light .border-white\/5 {
+  border-color: rgba(15, 23, 42, 0.08) !important;
+}
+
+html.light .border-white\/10 {
+  border-color: rgba(15, 23, 42, 0.12) !important;
+}
+
+html.light .border-white\/15 {
+  border-color: rgba(15, 23, 42, 0.16) !important;
+}
+
+html.light .border-white\/20 {
+  border-color: rgba(15, 23, 42, 0.2) !important;
+}
+
+html.light .border-\[\#C9A86A\],
+html.light .border-\[\#C9A86A\]\/50,
+html.light .border-\[\#C9A86A\]\/40,
+html.light .border-\[\#C9A86A\]\/30,
+html.light .border-\[\#C9A86A\]\/20 {
+  border-color: rgba(146, 101, 20, 0.35) !important;
+}
+
+html.light .hover\:border-\[\#C9A86A\]\/40:hover,
+html.light .hover\:border-\[\#C9A86A\]\/50:hover,
+html.light .group:hover .group-hover\:border-\[\#C9A86A\]\/40 {
+  border-color: rgba(146, 101, 20, 0.55) !important;
+}
+
+/* Forms & Inputs in Light Mode */
+html.light input,
+html.light textarea,
+html.light select {
+  background-color: #ffffff !important;
+  color: #0f172a !important;
+  border-color: #cbd5e1 !important;
+}
+
+html.light input.bg-transparent,
+html.light textarea.bg-transparent {
+  background-color: transparent !important;
+  border-color: transparent !important;
+  box-shadow: none !important;
+}
+
+html.light input::placeholder,
+html.light textarea::placeholder {
+  color: #94a3b8 !important;
+}
+
+html.light input:focus,
+html.light textarea:focus,
+html.light select:focus {
+  border-color: #926514 !important;
+  box-shadow: 0 0 0 2px rgba(146, 101, 20, 0.15) !important;
+}
+
+html.light input.bg-transparent:focus,
+html.light textarea.bg-transparent:focus {
+  border-color: transparent !important;
+  box-shadow: none !important;
+}
+
+/* Tailwind Gradient Overrides for Light Mode */
+html.light .from-\[\#0D1117\] {
+  --tw-gradient-from: #ffffff var(--tw-gradient-from-position) !important;
+  --tw-gradient-to: rgb(255 255 255 / 0) var(--tw-gradient-to-position) !important;
+  --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to) !important;
+}
+
+html.light .via-\[\#12161F\] {
+  --tw-gradient-to: rgb(241 245 249 / 0) var(--tw-gradient-to-position) !important;
+  --tw-gradient-stops: var(--tw-gradient-from), #f8fafc var(--tw-gradient-via-position), var(--tw-gradient-to) !important;
+}
+
+html.light .to-\[\#0D1117\] {
+  --tw-gradient-to: #ffffff var(--tw-gradient-to-position) !important;
+}
+
+html.light .from-\[\#12161F\] {
+  --tw-gradient-from: #f8fafc var(--tw-gradient-from-position) !important;
+  --tw-gradient-to: rgb(248 250 252 / 0) var(--tw-gradient-to-position) !important;
+  --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to) !important;
+}
+
+html.light .to-\[\#12161F\] {
+  --tw-gradient-to: #f8fafc var(--tw-gradient-to-position) !important;
+}
+
+html.light .from-\[\#161C26\] {
+  --tw-gradient-from: #f1f5f9 var(--tw-gradient-from-position) !important;
+  --tw-gradient-to: rgb(241 245 249 / 0) var(--tw-gradient-to-position) !important;
+  --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to) !important;
+}
+
+/* Soft, high-end shadows for light theme cards */
+html.light .shadow-2xl {
+  box-shadow: 0 20px 35px -10px rgba(15, 23, 42, 0.08), 0 8px 16px -4px rgba(15, 23, 42, 0.04) !important;
+}
+
+html.light .shadow-xl {
+  box-shadow: 0 12px 24px -6px rgba(15, 23, 42, 0.06), 0 4px 8px -2px rgba(15, 23, 42, 0.03) !important;
+}
+
+html.light .shadow-lg {
+  box-shadow: 0 8px 16px -4px rgba(15, 23, 42, 0.06), 0 2px 4px -2px rgba(15, 23, 42, 0.03) !important;
+}
+
+html.light .shadow-md {
+  box-shadow: 0 4px 8px -2px rgba(15, 23, 42, 0.05), 0 2px 4px -1px rgba(15, 23, 42, 0.03) !important;
+}
+
+/* Luxury Gold Gradient Text */
+.gold-gradient-text {
+  background: linear-gradient(135deg, #f5f5f5 0%, #c9a86a 50%, #e2c78e 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+html.light .gold-gradient-text {
+  background: linear-gradient(135deg, #0f172a 0%, #926514 55%, #b38024 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+/* Base resets and smooth scroll */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  scroll-behavior: smooth;
+  color-scheme: dark light;
+}
+
+body {
+  background-color: var(--bg-primary);
+  color: var(--text-primary);
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+  overflow-x: hidden;
+  min-height: 100vh;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+::selection {
+  background: rgba(201, 168, 106, 0.3);
+  color: #f5f5f5;
+}
+
+html.light ::selection {
+  background: rgba(146, 101, 20, 0.25) !important;
+  color: #0f172a !important;
+}
+
+/* Custom Sleek Scrollbar */
+::-webkit-scrollbar {
+  width: 7px;
+  height: 7px;
+}
+
+::-webkit-scrollbar-track {
+  background: var(--bg-primary);
+}
+
+::-webkit-scrollbar-thumb {
+  background: #1e2430;
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: var(--accent-gold);
+}
+
+html.light ::-webkit-scrollbar-track {
+  background: #f1f5f9;
+}
+
+html.light ::-webkit-scrollbar-thumb {
+  background: #cbd5e1;
+}
+
+html.light ::-webkit-scrollbar-thumb:hover {
+  background: #926514;
+}
+
+/* Hide scrollbar for Chrome, Safari, Opera, Edge, Firefox */
+.no-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+.no-scrollbar {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
+.subtle-grid-bg {
+  background-image: radial-gradient(var(--grid-color) 1px, transparent 1px);
+  background-size: 28px 28px;
+}
+
+/* Print specific styles for resume PDF export */
+@media print {
+  body {
+    background: #ffffff !important;
+    color: #111827 !important;
+  }
+
+  .no-print {
+    display: none !important;
+  }
+
+  .print-only {
+    display: block !important;
+  }
+
+  .print-resume-container {
+    background: #ffffff !important;
+    color: #0f172a !important;
+    border: none !important;
+    box-shadow: none !important;
+    padding: 0 !important;
+    margin: 0 !important;
+    width: 100% !important;
+    max-width: 100% !important;
+  }
+
+  .print-resume-container * {
+    color: #0f172a !important;
+    border-color: #cbd5e1 !important;
+    background: transparent !important;
+    box-shadow: none !important;
+  }
+
+  .print-resume-container h1,
+  .print-resume-container h2,
+  .print-resume-container h3,
+  .print-resume-container .font-bold {
+    color: #0f172a !important;
+    font-weight: 800 !important;
+  }
+
+  .print-resume-container a {
+    color: #0369a1 !important;
+    text-decoration: underline !important;
+  }
+
+  @page {
+    margin: 10mm 12mm;
+    size: A4 portrait;
+  }
+}

@@ -1,0 +1,767 @@
+{
+  "profile": {
+    "name": "Shilu Jas",
+    "title": "Full-Stack Developer",
+    "tagline": "Building digital experiences that actually work.",
+    "role": "Full-Stack / MERN Developer",
+    "email": "shilujastsy@gmail.com",
+    "phone": "+91 8891337414",
+    "location": "Kozhikode (Calicut), Kerala, India",
+    "status": "Available for opportunities",
+    "bio": "MERN Stack Developer with hands-on experience in building scalable, production-grade full-stack web applications using MongoDB, Express.js, React.js, and Node.js. Skilled in developing responsive user interfaces, designing RESTful APIs, and integrating backend services. Passionate about debugging, performance optimization, and turning complex ideas into functional digital products.",
+    "avatar": "/images/avatar.jpg",
+    "github": "https://github.com/shilujasprojects",
+    "linkedin": "https://www.linkedin.com/in/shilu-jas/",
+    "resumeUrl": "/resume.pdf"
+  },
+  "stats": [
+    {
+      "label": "Full-Stack Projects Built",
+      "value": "4+",
+      "sub": "Production & Client-ready"
+    },
+    {
+      "label": "Industry Internships",
+      "value": "3",
+      "sub": "MERN & QA Experience"
+    },
+    {
+      "label": "Technologies Mastered",
+      "value": "15+",
+      "sub": "Full-Stack Ecosystem"
+    },
+    {
+      "label": "Commitment to Clean Code",
+      "value": "100%",
+      "sub": "Modular & Scalable"
+    }
+  ],
+  "currentlyBuilding": [
+    {
+      "id": "eventura",
+      "title": "Building Eventura",
+      "subtitle": "Event Booking Platform",
+      "tag": "Active Project",
+      "desc": "Completing end-to-end full-stack workflows for event discovery, tiered package selection, custom services, and admin dashboard."
+    },
+    {
+      "id": "nextjs",
+      "title": "Exploring Next.js",
+      "subtitle": "Modern React Architecture",
+      "tag": "Architecture",
+      "desc": "Leveraging App Router, Server Components, and optimized API routes for ultra-fast, SEO-optimized web experiences."
+    },
+    {
+      "id": "backend",
+      "title": "Improving Backend",
+      "subtitle": "API Architecture & Security",
+      "tag": "Performance",
+      "desc": "Deepening expertise in scalable RESTful API design, JWT auth security, transactional workflows, and database indexing."
+    },
+    {
+      "id": "growth",
+      "title": "Learning & Growing",
+      "subtitle": "Continuous Skill Refinement",
+      "tag": "Self-Growth",
+      "desc": "Refining software engineering practices, testing methodologies with Postman, and building real-world functional products."
+    }
+  ],
+  "projects": [
+    {
+      "id": "eventura",
+      "slug": "eventura",
+      "number": "01",
+      "title": "Eventura",
+      "category": "Full-Stack MERN Platform",
+      "subtitle": "Event Booking & Management Platform",
+      "summary": "A full-stack event booking platform designed to connect clients with events, packages, services and vendors while providing an administrative management system.",
+      "status": "Completed Frontend & Backend",
+      "featured": true,
+      "technologies": [
+        "React.js",
+        "Node.js",
+        "Express.js",
+        "MongoDB",
+        "Mongoose",
+        "JWT",
+        "Bootstrap",
+        "Framer Motion",
+        "REST APIs"
+      ],
+      "liveUrl": "https://eventura-beta.vercel.app",
+      "githubUrl": "https://github.com/shilujasprojects/Eventura",
+      "isLiveAvailable": true,
+      "showLiveDemo": true,
+      "showCaseStudy": false,
+      "showGithub": true,
+      "image": "/images/projects/eventura-preview.png",
+      "overview": "Eventura is a comprehensive event booking and management ecosystem engineered to bridge the gap between event organizers, clients, and service vendors. It offers seamless discovery of curated events, multi-tier package selection, customizable add-on services, an automated booking lifecycle, and a feature-rich admin dashboard for operational control.",
+      "problem": "Event booking and vendor coordination are often fragmented across multiple communication channels, leading to double-bookings, unclear service package pricing, lack of transparency in scheduling, and manual overhead for event administrators.",
+      "solution": "Eventura consolidates the entire lifecycle into a unified digital platform. Clients can explore categorized events, inspect rich media details, select tiered packages or build custom bundles with add-on services, and track bookings. Administrators gain full visibility through a dedicated dashboard to manage events, client requests, vendor allocations, and payment verification.",
+      "keyFeatures": [
+        {
+          "title": "Dynamic Event Discovery",
+          "desc": "Interactive event filtering by category, date, and budget with real-time search."
+        },
+        {
+          "title": "Tiered & Custom Packages",
+          "desc": "Pre-configured event packages with flexibility to attach custom add-on services."
+        },
+        {
+          "title": "Stateful Booking Workflow",
+          "desc": "Multi-step booking wizard with input validation, date availability, and price calculation."
+        },
+        {
+          "title": "Payment Verification Flow",
+          "desc": "Order tracking and payment status verification with automated client receipts."
+        },
+        {
+          "title": "Administrative Dashboard",
+          "desc": "Secure portal to manage events, packages, client reservations, and vendor assignments."
+        },
+        {
+          "title": "Responsive & Animated UI",
+          "desc": "Crafted with React, Bootstrap, and Framer Motion for buttery-smooth cross-device experience."
+        }
+      ],
+      "architecture": {
+        "client": "React.js + Framer Motion (Responsive UI / Client State)",
+        "network": "Axios HTTP Client with JWT Bearer Interceptors",
+        "api": "Express.js RESTful API Server",
+        "controllers": "Modular Route Controllers & Validation Middleware",
+        "orm": "Mongoose ODM with Data Validation & Populated Relations",
+        "database": "MongoDB Database (Atlas Cluster)"
+      },
+      "challenges": [
+        {
+          "challenge": "Complex Multi-Tier Relational Schema",
+          "solution": "Designed MongoDB collections for Categories, Events, Packages, and Add-on Services with Mongoose references and population pipelines, ensuring data consistency without over-fetching."
+        },
+        {
+          "challenge": "Multi-Step Booking State & Calculations",
+          "solution": "Built a centralized state machine on the frontend combined with atomic server-side price re-verification to prevent tampering."
+        },
+        {
+          "challenge": "Role-Based Access Control",
+          "solution": "Implemented JWT authentication with HTTP-only tokens and custom Express authorization middleware distinguishing Admin, Vendor, and Client permissions."
+        },
+        {
+          "challenge": "Responsive Design & Micro-Animations",
+          "solution": "Balanced rich motion transitions with lightweight CSS performance to ensure zero layout shift across mobile and desktop viewports."
+        }
+      ],
+      "walkthroughSteps": [
+        {
+          "step": "01",
+          "name": "Homepage Discovery",
+          "desc": "Client explores trending categories, featured venues, and curated packages."
+        },
+        {
+          "step": "02",
+          "name": "Event Details",
+          "desc": "Inspects high-resolution galleries, amenities, reviews, and package tiers."
+        },
+        {
+          "step": "03",
+          "name": "Package Customization",
+          "desc": "Selects base package and attaches add-on catering, photography, and lighting."
+        },
+        {
+          "step": "04",
+          "name": "Booking & Payment",
+          "desc": "Fills contact credentials, chooses available date slot, and submits booking."
+        },
+        {
+          "step": "05",
+          "name": "Admin Management",
+          "desc": "Admin reviews booking request, verifies payment, and assigns vendors."
+        }
+      ]
+    },
+    {
+      "id": "empty-freight",
+      "slug": "empty-freight",
+      "number": "03",
+      "title": "Empty Freight Optimization System",
+      "category": "Logistics & Supply Chain",
+      "subtitle": "Logistics Management & Load Matching Platform",
+      "summary": "Logistics management application facilitating freight matching, transporter coordination, route availability, and business workflows to eliminate empty return trips.",
+      "status": "Completed Full-Stack Project",
+      "featured": true,
+      "technologies": [
+        "Full-Stack",
+        "JavaScript",
+        "Node.js",
+        "REST APIs",
+        "Database Design",
+        "Responsive UI"
+      ],
+      "liveUrl": "https://empty-freight.vercel.app",
+      "githubUrl": "https://github.com/shilujas/empty-freight",
+      "isLiveAvailable": false,
+      "showLiveDemo": false,
+      "showCaseStudy": false,
+      "showGithub": false,
+      "image": "/images/projects/freight-preview.png",
+      "overview": "Empty Freight Optimization System is a specialized logistics platform developed to address the empty haul problem in cargo transportation. It connects load providers with available freight carriers on return routes, maximizing vehicle utilization and cutting operational fuel waste.",
+      "problem": "Trucks and cargo vehicles frequently return empty after delivering freight, wasting fuel, driver time, and potential revenue. Finding verified shippers on return corridors required manual phone calls and middlemen.",
+      "solution": "Built a centralized digital exchange where transporters register truck capacities and return routes, while shippers post available cargo loads. The platform matches routes based on origin, destination, and vehicle capacity.",
+      "keyFeatures": [
+        {
+          "title": "Freight Load Listings",
+          "desc": "Post and discover available cargo by weight, cargo type, and transit window."
+        },
+        {
+          "title": "Transporter Route Availability",
+          "desc": "Carriers broadcast planned return routes to receive immediate load requests."
+        },
+        {
+          "title": "Direct Inquiry & Booking",
+          "desc": "In-app negotiation and booking confirmation between shippers and vehicle operators."
+        },
+        {
+          "title": "Role-Based Portals",
+          "desc": "Dedicated interfaces for shippers, drivers, and logistics coordinators."
+        }
+      ],
+      "architecture": {
+        "client": "Responsive Web Interface (Modular Components)",
+        "network": "REST API Integration",
+        "api": "Backend Route Controllers & Matching Engine",
+        "controllers": "Freight, Vehicle, and Communication Handlers",
+        "orm": "Data Access Layer",
+        "database": "Relational / Document Database"
+      },
+      "challenges": [
+        {
+          "challenge": "Route & Schedule Matching",
+          "solution": "Engineered query filters matching pickup dates and transit corridors within geographic tolerances."
+        },
+        {
+          "challenge": "Cross-Device Operational Usability",
+          "solution": "Optimized mobile layout for drivers on the road with high contrast touch buttons and quick status toggles."
+        }
+      ],
+      "walkthroughSteps": [
+        {
+          "step": "01",
+          "name": "Load Posting",
+          "desc": "Shipper creates a freight request with dimensions and route coordinates."
+        },
+        {
+          "step": "02",
+          "name": "Route Matching",
+          "desc": "Platform presents available transporters traveling along that corridor."
+        },
+        {
+          "step": "03",
+          "name": "Deal Finalization",
+          "desc": "Transporter accepts the cargo load, locking the return route capacity."
+        }
+      ]
+    },
+    {
+      "id": "hospital-management",
+      "slug": "hospital-management",
+      "number": "04",
+      "title": "Hospital Management System",
+      "category": "Healthcare Portal",
+      "subtitle": "Patient Care & Departmental Records System",
+      "summary": "Full-stack healthcare management system for appointment booking, digital prescriptions, patient history, and integrated departmental service modules.",
+      "status": "Completed Project",
+      "featured": false,
+      "technologies": [
+        "Full-Stack Web",
+        "Python / Django",
+        "Database Architecture",
+        "REST APIs",
+        "AI Assistant"
+      ],
+      "liveUrl": "",
+      "githubUrl": "https://github.com/shilujas/hospital-management",
+      "isLiveAvailable": false,
+      "showLiveDemo": false,
+      "showCaseStudy": false,
+      "showGithub": false,
+      "image": "/images/projects/hospital-preview.png",
+      "overview": "A multi-module healthcare information system created to streamline clinical appointment scheduling, medical record keeping, and patient consultations with an interactive AI chatbot assistant.",
+      "problem": "Patient records and diagnostic reports often get siloed across disparate hospital departments, slowing down doctor consultations and patient workflows.",
+      "solution": "Constructed an integrated portal bridging patient registrations, doctor schedules, diagnostic lab results, pharmacy requests, and instant triage assistance.",
+      "keyFeatures": [
+        {
+          "title": "Doctor Appointment Scheduling",
+          "desc": "Dynamic time-slot selection and doctor availability calendar."
+        },
+        {
+          "title": "Digital Patient Health Records",
+          "desc": "Centralized history of diagnoses, prescriptions, and lab test results."
+        },
+        {
+          "title": "Integrated AI Chatbot",
+          "desc": "Automated assistance for patient inquiries and symptom guidance."
+        }
+      ],
+      "architecture": {
+        "client": "Responsive Web Interface",
+        "network": "REST API Communication",
+        "api": "Backend Application Services",
+        "controllers": "Department & Consultation Controllers",
+        "orm": "ORM Model Layer",
+        "database": "SQL Database"
+      },
+      "challenges": [
+        {
+          "challenge": "Departmental Data Isolation",
+          "solution": "Designed unified relational schemas ensuring doctors have full visibility into pharmacy and lab reports."
+        }
+      ],
+      "walkthroughSteps": [
+        {
+          "step": "01",
+          "name": "Patient Booking",
+          "desc": "Patient books a consultation slot with selected specialist."
+        },
+        {
+          "step": "02",
+          "name": "Doctor Consultation",
+          "desc": "Doctor reviews medical history and enters digital prescription."
+        }
+      ]
+    }
+  ],
+  "skills": {
+    "frontend": [
+      {
+        "name": "React.js",
+        "level": "Advanced",
+        "highlight": true,
+        "category": "frontend",
+        "projects": [
+          "eventura",
+          "victory-ecom-connect"
+        ]
+      },
+      {
+        "name": "JavaScript (ES6+)",
+        "level": "Advanced",
+        "highlight": true,
+        "category": "frontend",
+        "projects": [
+          "eventura",
+          "victory-ecom-connect",
+          "empty-freight"
+        ]
+      },
+      {
+        "name": "HTML5 & CSS3",
+        "level": "Advanced",
+        "highlight": false,
+        "category": "frontend",
+        "projects": [
+          "eventura",
+          "victory-ecom-connect",
+          "empty-freight"
+        ]
+      },
+      {
+        "name": "Tailwind CSS",
+        "level": "Advanced",
+        "highlight": true,
+        "category": "frontend",
+        "projects": [
+          "victory-ecom-connect"
+        ]
+      },
+      {
+        "name": "Bootstrap",
+        "level": "Proficient",
+        "highlight": false,
+        "category": "frontend",
+        "projects": [
+          "eventura"
+        ]
+      },
+      {
+        "name": "Framer Motion",
+        "level": "Proficient",
+        "highlight": true,
+        "category": "frontend",
+        "projects": [
+          "eventura"
+        ]
+      }
+    ],
+    "backend": [
+      {
+        "name": "Node.js",
+        "level": "Advanced",
+        "highlight": true,
+        "category": "backend",
+        "projects": [
+          "eventura",
+          "victory-ecom-connect"
+        ]
+      },
+      {
+        "name": "Express.js",
+        "level": "Advanced",
+        "highlight": true,
+        "category": "backend",
+        "projects": [
+          "eventura"
+        ]
+      },
+      {
+        "name": "RESTful APIs",
+        "level": "Advanced",
+        "highlight": true,
+        "category": "backend",
+        "projects": [
+          "eventura",
+          "victory-ecom-connect",
+          "empty-freight"
+        ]
+      },
+      {
+        "name": "JWT Authentication",
+        "level": "Advanced",
+        "highlight": true,
+        "category": "backend",
+        "projects": [
+          "eventura"
+        ]
+      }
+    ],
+    "database": [
+      {
+        "name": "MongoDB",
+        "level": "Advanced",
+        "highlight": true,
+        "category": "database",
+        "projects": [
+          "eventura",
+          "victory-ecom-connect"
+        ]
+      },
+      {
+        "name": "MySQL / SQL",
+        "level": "Proficient",
+        "highlight": false,
+        "category": "database",
+        "projects": [
+          "empty-freight",
+          "hospital-management"
+        ]
+      }
+    ],
+    "tools": [
+      {
+        "name": "Git & GitHub",
+        "level": "Advanced",
+        "highlight": true,
+        "category": "tools",
+        "projects": [
+          "eventura",
+          "victory-ecom-connect",
+          "empty-freight"
+        ]
+      },
+      {
+        "name": "Postman",
+        "level": "Advanced",
+        "highlight": true,
+        "category": "tools",
+        "projects": [
+          "eventura",
+          "victory-ecom-connect"
+        ]
+      },
+      {
+        "name": "VS Code",
+        "level": "Advanced",
+        "highlight": false,
+        "category": "tools",
+        "projects": [
+          "eventura",
+          "victory-ecom-connect",
+          "empty-freight"
+        ]
+      },
+      {
+        "name": "Vercel / Netlify",
+        "level": "Proficient",
+        "highlight": true,
+        "category": "tools",
+        "projects": [
+          "eventura",
+          "victory-ecom-connect"
+        ]
+      },
+      {
+        "name": "Cursor",
+        "level": "Proficient",
+        "highlight": false,
+        "category": "tools",
+        "projects": []
+      },
+      {
+        "name": "Antigravity",
+        "level": "Proficient",
+        "highlight": false,
+        "category": "tools",
+        "projects": []
+      }
+    ],
+    "testing": [
+      {
+        "name": "API Testing (Postman)",
+        "level": "Advanced",
+        "highlight": true,
+        "category": "testing",
+        "projects": [
+          "eventura",
+          "victory-ecom-connect"
+        ]
+      },
+      {
+        "name": "Manual UI Testing",
+        "level": "Advanced",
+        "highlight": true,
+        "category": "testing",
+        "projects": [
+          "eventura",
+          "victory-ecom-connect"
+        ]
+      },
+      {
+        "name": "Responsive Testing",
+        "level": "Advanced",
+        "highlight": true,
+        "category": "testing",
+        "projects": [
+          "eventura",
+          "victory-ecom-connect",
+          "empty-freight"
+        ]
+      }
+    ]
+  },
+  "howIBuild": [
+    {
+      "step": "01",
+      "title": "DISCOVER",
+      "subtitle": "Understand the problem",
+      "desc": "Analyze core requirements, user persona workflows, business goals, edge cases, and architectural trade-offs before writing a single line of code."
+    },
+    {
+      "step": "02",
+      "title": "PLAN",
+      "subtitle": "Design user flow & architecture",
+      "desc": "Design normalized database schemas, outline RESTful API contracts, blueprint component hierarchy, and define data relationships."
+    },
+    {
+      "step": "03",
+      "title": "BUILD",
+      "subtitle": "Develop frontend, backend & APIs",
+      "desc": "Develop modular React/Next.js components, robust Express/Node.js endpoints, secure JWT authentication, and clean business logic."
+    },
+    {
+      "step": "04",
+      "title": "TEST",
+      "subtitle": "Verify functionality & edge cases",
+      "desc": "Perform API testing via Postman, validate CRUD flows, inspect edge-case error handling, and test responsiveness across all viewport sizes."
+    },
+    {
+      "step": "05",
+      "title": "DEPLOY",
+      "subtitle": "Deploy, optimize & maintain",
+      "desc": "Deploy to modern cloud hosts (Vercel/Netlify), configure SEO metadata, optimize Core Web Vitals, and continuously refine performance."
+    }
+  ],
+  "experience": [
+    {
+      "id": "exp-1",
+      "role": "MERN Stack Developer Intern",
+      "company": "Zonemac Solutions",
+      "location": "Kozhikode, Kerala",
+      "period": "Oct 2025 – Present",
+      "badge": "Current",
+      "skills": [
+        "MongoDB",
+        "Express.js",
+        "React.js",
+        "Node.js",
+        "REST APIs",
+        "Debugging"
+      ],
+      "points": [
+        "Developed full-stack web applications using MongoDB, Express.js, React.js, and Node.js with high code standards.",
+        "Designed and implemented RESTful APIs for dynamic data handling, authentication, and CRUD operations.",
+        "Built responsive and interactive UI components using React.js with modular design patterns.",
+        "Integrated frontend with backend services and optimized application loading performance.",
+        "Debugged and tested applications using Postman to ensure smooth, stable functionality."
+      ]
+    },
+    {
+      "id": "exp-2",
+      "role": "Software Developer & QA Intern",
+      "company": "Bairuhatech",
+      "location": "Kozhikode, Kerala",
+      "period": "Jun 2025 – Oct 2025",
+      "badge": "Completed",
+      "skills": [
+        "React.js",
+        "UI Testing",
+        "Postman",
+        "Jira",
+        "Bug Tracking"
+      ],
+      "points": [
+        "Developed and improved responsive UI components with a strong focus on clean design, usability, and accessibility.",
+        "Collaborated closely with development teams to implement new product features and enhance user experience.",
+        "Conducted comprehensive UI testing, identified critical bugs, tracked issues in Jira, and ensured application stability."
+      ]
+    },
+    {
+      "id": "exp-3",
+      "role": "Full Stack MERN Intern",
+      "company": "ICT Academy – UL Cyberpark",
+      "location": "Kozhikode, Kerala",
+      "period": "Jun 2024 (1 Month)",
+      "badge": "Completed",
+      "skills": [
+        "MERN Stack",
+        "E-Commerce",
+        "Authentication",
+        "CRUD",
+        "Deployment"
+      ],
+      "points": [
+        "Built a MERN-based eCommerce application with user authentication, product catalog, and dynamic cart functionality.",
+        "Implemented CRUD operations and RESTful API integration across the full stack.",
+        "Gained hands-on experience in MERN application deployment, Git collaborative workflows, and agile development."
+      ]
+    }
+  ],
+  "education": [
+    {
+      "degree": "Master of Computer Application (MCA)",
+      "institution": "KMCT School of Business, KTU University",
+      "location": "Kozhikode, Kerala",
+      "period": "2023 – 2025",
+      "score": "CGPA: 8.05 / 10",
+      "details": "Specialized in Full-Stack Web Technologies, Advanced Database Systems, Software Engineering, and Cloud Architectures."
+    },
+    {
+      "degree": "Bachelor of Computer Science (B.Sc.)",
+      "institution": "Lissah College, Calicut University",
+      "location": "Calicut, Kerala",
+      "period": "2020 – 2023",
+      "score": "CGPA: 8.09 / 10",
+      "details": "Core foundations in Computer Science, Data Structures, Algorithms, Object-Oriented Programming, and Database Management."
+    },
+    {
+      "degree": "Diploma in Indian and Foreign Accountancy",
+      "institution": "G-Tech",
+      "location": "Thamarassery, Kerala",
+      "period": "2022 – 2023",
+      "score": "Certified",
+      "details": "Financial accounting workflows, enterprise auditing concepts, and business operations."
+    }
+  ],
+  "certifications": [
+    {
+      "id": "cert-1",
+      "title": "Cloud Computing",
+      "issuer": "NPTEL",
+      "year": "2024",
+      "pdfUrl": "/certificates/Cloud_Computing-1786818338910.pdf",
+      "pdfFileName": "Cloud Computing.pdf",
+      "url": "/certificates/Cloud_Computing-1786818338910.pdf",
+      "credentialId": "Cloud Computing.pdf"
+    },
+    {
+      "id": "cert-2",
+      "title": "Demystifying Networks",
+      "issuer": "NPTEL",
+      "year": "2024",
+      "pdfUrl": "/certificates/Demystifying_Networking-1786818157611.pdf",
+      "pdfFileName": "Demystifying Networking.pdf",
+      "url": "/certificates/Demystifying_Networking-1786818157611.pdf",
+      "credentialId": "Demystifying Networking.pdf"
+    },
+    {
+      "id": "cert-3",
+      "title": "Database Management System",
+      "issuer": "NPTEL",
+      "year": "2024",
+      "pdfUrl": "/certificates/Data_Base_Management_System-1786818079355.pdf",
+      "pdfFileName": "Data Base Management System.pdf",
+      "url": "/certificates/Data_Base_Management_System-1786818079355.pdf",
+      "credentialId": "Data Base Management System.pdf"
+    },
+    {
+      "id": "cert-4",
+      "title": "Tally & IAB Certification (International)",
+      "issuer": "IAB / G-Tech",
+      "year": "2023",
+      "pdfUrl": "/certificates/dbms-nptel.pdf",
+      "pdfFileName": "IAB_Tally_Certificate.pdf",
+      "url": "/certificates/dbms-nptel.pdf",
+      "credentialId": "IAB_Tally_Certificate.pdf"
+    }
+  ],
+  "philosophy": [
+    {
+      "title": "Clean Code",
+      "subtitle": "Readability & Maintainability",
+      "desc": "I write code that is clean, modular, properly structured, and easy for any team member to understand, extend, and scale."
+    },
+    {
+      "title": "User First",
+      "subtitle": "Real Needs & Intuitive UX",
+      "desc": "I build solutions around real user needs. A technical architecture is only as valuable as the experience and utility it brings to people."
+    },
+    {
+      "title": "Continuous Learning",
+      "subtitle": "Growth & Engineering Craft",
+      "desc": "I continuously improve my technical skills, explore modern frameworks, embrace best practices, and turn emerging ideas into working software."
+    }
+  ],
+  "githubActivity": {
+    "username": "shilujasprojects",
+    "totalContributions": "43",
+    "publicRepos": "4+",
+    "currentStreak": "1 day",
+    "topLanguage": "JavaScript / TypeScript",
+    "autoFetch": true,
+    "lastSynced": "2026-09-28T10:38:33.162Z",
+    "contributions": [
+      {
+        "month": "Sep",
+        "level": 2
+      },
+      {
+        "month": "Oct",
+        "level": 3
+      },
+      {
+        "month": "Nov",
+        "level": 4
+      },
+      {
+        "month": "Dec",
+        "level": 3
+      },
+      {
+        "month": "Jan",
+        "level": 4
+      },
+      {
+        "month": "Feb",
+        "level": 4
+      }
+    ]
+  },
+  "messages": []
+}
