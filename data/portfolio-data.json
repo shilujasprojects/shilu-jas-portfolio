@@ -6,7 +6,7 @@
     "role": "Full-Stack / MERN Developer",
     "email": "shilujastsy@gmail.com",
     "phone": "+91 8891337414",
-    "location": "Kozhikode (Calicut), Kerala, India",
+    "location": "Kozhikode, Kerala",
     "status": "Available for opportunities",
     "bio": "MERN Stack Developer with hands-on experience in building scalable, production-grade full-stack web applications using MongoDB, Express.js, React.js, and Node.js. Skilled in developing responsive user interfaces, designing RESTful APIs, and integrating backend services. Passionate about debugging, performance optimization, and turning complex ideas into functional digital products.",
     "avatar": "/images/avatar.jpg",
@@ -671,6 +671,16 @@
   ],
   "certifications": [
     {
+      "id": "cert-1790793719097",
+      "title": "Tally & IAB Certification (International)",
+      "issuer": "Tally / IAB",
+      "year": "2023",
+      "pdfUrl": "/certificates/Tally_IAB-1790793711951.pdf",
+      "pdfFileName": "Tally_IAB.pdf",
+      "url": "/certificates/Tally_IAB-1790793711951.pdf",
+      "credentialId": "Tally_IAB.pdf"
+    },
+    {
       "id": "cert-1",
       "title": "Cloud Computing",
       "issuer": "NPTEL",
@@ -699,16 +709,6 @@
       "pdfFileName": "Data Base Management System.pdf",
       "url": "/certificates/Data_Base_Management_System-1786818079355.pdf",
       "credentialId": "Data Base Management System.pdf"
-    },
-    {
-      "id": "cert-4",
-      "title": "Tally & IAB Certification (International)",
-      "issuer": "IAB / G-Tech",
-      "year": "2023",
-      "pdfUrl": "/certificates/dbms-nptel.pdf",
-      "pdfFileName": "IAB_Tally_Certificate.pdf",
-      "url": "/certificates/dbms-nptel.pdf",
-      "credentialId": "IAB_Tally_Certificate.pdf"
     }
   ],
   "philosophy": [

@@ -30,7 +30,7 @@ export default function RecruiterModal({ isOpen, onClose, data }: RecruiterModal
 
   return (
     <div className="fixed inset-0 z-50 flex items-center justify-center p-4 bg-black/80 backdrop-blur-md animate-fadeIn">
-      <div 
+      <div
         className="relative w-full max-w-2xl max-h-[90vh] overflow-y-auto rounded-2xl bg-[#0D1117] border border-[#C9A86A]/40 shadow-2xl p-5 sm:p-8 text-left"
         onClick={(e) => e.stopPropagation()}
       >
@@ -61,7 +61,7 @@ export default function RecruiterModal({ isOpen, onClose, data }: RecruiterModal
             {data.profile.name}
           </h2>
           <p className="text-[#C9A86A] font-medium text-sm sm:text-base mt-1">
-            {data.profile.role} • MERN Stack & Next.js Specialist
+            {data.profile.role} • MERN Stack Specialist
           </p>
           <div className="flex flex-wrap items-center gap-4 text-xs text-gray-400 mt-2">
             <span className="flex items-center gap-1">
@@ -78,8 +78,8 @@ export default function RecruiterModal({ isOpen, onClose, data }: RecruiterModal
         {/* Core Elevator Pitch */}
         <div className="bg-[#12161F] p-4 rounded-xl border border-white/5 mb-5">
           <p className="text-sm text-gray-300 leading-relaxed">
-            Hands-on Full-Stack Developer with 3 professional internships (Zonemac Solutions, Bairuhatech, ICT Academy). 
-            Proven track record of building production-grade MERN web apps, architecting RESTful APIs, designing secure JWT auth, 
+            Hands-on Full-Stack Developer with 3 professional internships (Zonemac Solutions, Bairuhatech, ICT Academy).
+            Proven track record of building production-grade MERN web apps, architecting RESTful APIs, designing secure JWT auth,
             and crafting responsive UI systems.
           </p>
         </div>

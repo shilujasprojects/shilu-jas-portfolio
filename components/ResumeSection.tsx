@@ -13,7 +13,7 @@ export default function ResumeSection({ data }: ResumeSectionProps) {
   return (
     <section id="resume" className="py-20 lg:py-28 relative bg-[#08090B]">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        
+
         {/* Section Header */}
         <div className="flex flex-col md:flex-row md:items-end justify-between mb-12 gap-4">
           <div className="space-y-2">
@@ -40,7 +40,7 @@ export default function ResumeSection({ data }: ResumeSectionProps) {
           <div className="absolute top-0 right-0 w-80 h-80 bg-[#C9A86A]/10 rounded-full blur-3xl pointer-events-none" />
 
           <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 items-center relative">
-            
+
             {/* Left Info Column */}
             <div className="lg:col-span-8 space-y-5">
               <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full text-xs font-semibold bg-[#C9A86A]/15 text-[#C9A86A] border border-[#C9A86A]/30">
@@ -53,7 +53,7 @@ export default function ResumeSection({ data }: ResumeSectionProps) {
                   {data.profile.name} — {data.profile.role}
                 </h3>
                 <p className="text-sm text-gray-300 mt-2 leading-relaxed">
-                  Specialized in MERN Stack, React.js, Next.js, and RESTful API backend architectures. 
+                  Specialized in MERN Stack, React.js, Next.js, and RESTful API backend architectures.
                   Featuring 3 professional internships at Zonemac Solutions, Bairuhatech, and ICT Academy UL Cyberpark.
                 </p>
               </div>

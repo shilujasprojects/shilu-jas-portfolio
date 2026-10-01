@@ -1216,6 +1216,28 @@ export default function AdminStudio() {
                   className="w-full px-3 py-2 rounded-xl bg-[#12161F] border border-white/10 text-white text-xs"
                 />
               </div>
+
+              <div className="space-y-1">
+                <label className="text-xs font-semibold text-gray-300">Location (City, State / Country)</label>
+                <input
+                  type="text"
+                  value={data.profile?.location || ""}
+                  onChange={(e) => setData({ ...data, profile: { ...(data.profile || { name: "", role: "", title: "", email: "", phone: "", bio: "", status: "", heroBadge: "" }), location: e.target.value } })}
+                  placeholder="e.g. Kozhikode, Kerala"
+                  className="w-full px-3 py-2 rounded-xl bg-[#12161F] border border-white/10 text-white text-xs font-medium"
+                />
+              </div>
+
+              <div className="space-y-1">
+                <label className="text-xs font-semibold text-gray-300">Availability Status Badge</label>
+                <input
+                  type="text"
+                  value={data.profile?.status || ""}
+                  onChange={(e) => setData({ ...data, profile: { ...(data.profile || { name: "", role: "", title: "", email: "", phone: "", location: "", bio: "", heroBadge: "" }), status: e.target.value } })}
+                  placeholder="e.g. Available for Full-Stack Roles"
+                  className="w-full px-3 py-2 rounded-xl bg-[#12161F] border border-white/10 text-white text-xs"
+                />
+              </div>
             </div>
 
             <div className="space-y-1">

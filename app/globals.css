@@ -422,16 +422,26 @@ html.light ::-webkit-scrollbar-thumb:hover {
 @media print {
   @page {
     size: A4 portrait;
-    margin: 18mm 16mm 18mm 16mm !important;
+    margin: 8mm 10mm 8mm 10mm !important;
   }
 
   html, body {
-    background: #ffffff !important;
+    background: #f8fafc !important;
     color: #0f172a !important;
     margin: 0 !important;
     padding: 0 !important;
     -webkit-print-color-adjust: exact !important;
     print-color-adjust: exact !important;
+  }
+
+  /* Reset outer container padding to avoid pushing content to page 3 */
+  div.min-h-screen {
+    padding-top: 0 !important;
+    padding-bottom: 0 !important;
+    margin-top: 0 !important;
+    margin-bottom: 0 !important;
+    min-height: auto !important;
+    background: #f8fafc !important;
   }
 
   .no-print {
@@ -446,26 +456,28 @@ html.light ::-webkit-scrollbar-thumb:hover {
     background: #ffffff !important;
     color: #0f172a !important;
     border: none !important;
+    border-radius: 0 !important;
     box-shadow: none !important;
     padding: 0 !important;
     margin: 0 auto !important;
-    width: 100% !important;
     max-width: 100% !important;
+    width: 100% !important;
   }
 
-  .print-resume-container * {
-    color: #0f172a !important;
-    border-color: #cbd5e1 !important;
-    background: transparent !important;
-    box-shadow: none !important;
+  /* Header banner styling rules */
+  .resume-header-banner {
+    background-color: #0B2545 !important;
+    color: #ffffff !important;
+    -webkit-print-color-adjust: exact !important;
+    print-color-adjust: exact !important;
   }
 
-  .print-resume-container h1,
-  .print-resume-container h2,
-  .print-resume-container h3,
-  .print-resume-container .font-bold {
-    color: #0f172a !important;
-    font-weight: 800 !important;
+  .resume-header-name {
+    color: #ffffff !important;
+  }
+
+  .resume-header-role {
+    color: #90CAF9 !important;
   }
 
   .print-resume-container a {
@@ -473,18 +485,36 @@ html.light ::-webkit-scrollbar-thumb:hover {
     text-decoration: none !important;
   }
 
+  /* Section block spacing on print */
+  .resume-section-block {
+    break-inside: auto;
+    padding-top: 3.5mm !important;
+    margin-top: 1mm !important;
+  }
+
   /* Prevent page breaks from awkwardly splitting headings & project items */
   .resume-section-heading {
     break-after: avoid;
     page-break-after: avoid;
+    padding-bottom: 6px !important;
+    margin-bottom: 8px !important;
+    line-height: 1.4 !important;
   }
 
   .resume-item-block {
     break-inside: avoid;
     page-break-inside: avoid;
-    margin-bottom: 3.5mm !important;
+    margin-bottom: 2.5mm !important;
   }
 }
+
+/* Global resume section heading spacing for preview & PDF export */
+.resume-section-heading {
+  padding-bottom: 8px !important;
+  margin-bottom: 8px !important;
+  line-height: 1.4 !important;
+}
+
 
 
 
